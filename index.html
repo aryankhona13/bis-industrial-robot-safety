@@ -5,31 +5,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="BIS Club Poster Companion — Industrial Robots: The Role of Safety Standards">
 <title>Industrial Robots: The Role of Safety Standards | BIS Club</title>
+
 <style>
 :root{
-  --navy:#17243a;--navy2:#243452;--red:#a71919;--gold:#d7a82e;
-  --blue:#2d6795;--green:#4e7e43;--purple:#70509a;--orange:#d88826;
-  --ink:#20252b;--muted:#646a72;--paper:#e9edf0;--paper2:#dfe6eb;--white:#fff;
-  --line:#c5cdd4;--soft:#f3f6f8;--danger:#b52a2a;--shadow:0 7px 20px rgba(16,29,45,.12)
+  --navy:#17243a;
+  --red:#a71919;
+  --gold:#d7a82e;
+  --blue:#2d6795;
+  --green:#4e7e43;
+  --purple:#70509a;
+  --orange:#d88826;
+  --ink:#20252b;
+  --muted:#646a72;
+  --paper:#e9edf0;
+  --white:#fff;
+  --line:#c5cdd4;
+  --shadow:0 7px 20px rgba(16,29,45,.12)
 }
+
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+
+html{
+  scroll-behavior:smooth
+}
+
 body{
-  margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.58;
+  margin:0;
+  color:var(--ink);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.58;
   background:
     linear-gradient(rgba(28,49,70,.06) 1px,transparent 1px),
     linear-gradient(90deg,rgba(28,49,70,.06) 1px,transparent 1px),
     linear-gradient(135deg,#e6ebef,#f0f3f5 55%,#e2e8ed);
   background-size:28px 28px,28px 28px,auto;
 }
+
 body:before{
-  content:"";position:fixed;inset:0;pointer-events:none;
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
   background:
     radial-gradient(circle at 12% 14%,rgba(215,168,46,.10),transparent 24%),
     radial-gradient(circle at 86% 22%,rgba(45,103,149,.08),transparent 28%)
 }
+
 a{color:inherit}
-.container{width:min(1180px,92%);margin:auto}
+
+.container{
+  width:min(1180px,92%);
+  margin:auto
+}
+
 .topbar{
   height:7px;
   background:linear-gradient(
@@ -41,6 +69,7 @@ a{color:inherit}
     var(--blue) 85%
   )
 }
+
 header{
   position:sticky;
   top:0;
@@ -49,6 +78,7 @@ header{
   border-bottom:1px solid var(--line);
   backdrop-filter:blur(6px)
 }
+
 .nav{
   min-height:66px;
   display:flex;
@@ -56,6 +86,7 @@ header{
   justify-content:space-between;
   gap:18px
 }
+
 .brand{
   display:flex;
   align-items:center;
@@ -66,6 +97,7 @@ header{
   font-size:12px;
   letter-spacing:.05em
 }
+
 .brand-bis{
   width:42px;
   height:42px;
@@ -76,36 +108,41 @@ header{
   font-size:11px;
   background:#fff
 }
+
 .navlinks{
   display:flex;
   flex-wrap:wrap;
   gap:15px;
   font-size:12px
 }
+
 .navlinks a{
   text-decoration:none;
   color:#3e4650
 }
+
 .navlinks a:hover{
   color:var(--red);
   text-decoration:underline
 }
 
 /* HERO */
+
 .hero{
   padding:56px 0 60px;
-  background:
-    linear-gradient(135deg,rgba(23,36,58,.98),rgba(25,42,67,.96));
+  background:linear-gradient(135deg,rgba(23,36,58,.98),rgba(25,42,67,.96));
   color:#fff;
   border-bottom:4px solid var(--gold);
   overflow:hidden
 }
+
 .hero-grid{
   display:grid;
   grid-template-columns:1.02fr .98fr;
   gap:40px;
   align-items:center
 }
+
 .eyebrow{
   margin:0 0 9px;
   text-transform:uppercase;
@@ -114,27 +151,32 @@ header{
   color:#f0d879;
   font-weight:900
 }
+
 h1{
   font-family:Georgia,"Times New Roman",serif;
   font-size:clamp(38px,5vw,66px);
   line-height:1.02;
   margin:0 0 18px
 }
+
 .hero-title-line{
   display:block;
   color:#f0d879
 }
+
 .hero-sub{
   max-width:780px;
   color:#d5dce6;
   font-size:17px;
   margin:0 0 20px
 }
+
 .hero-meta{
   display:flex;
   flex-wrap:wrap;
   gap:8px
 }
+
 .hero-meta span{
   border:1px solid rgba(255,255,255,.22);
   padding:7px 10px;
@@ -143,12 +185,14 @@ h1{
   color:#f0f3f6;
   background:rgba(255,255,255,.035)
 }
+
 .hero-art{
   background:#fff;
   border:4px solid #fff;
   padding:8px;
   box-shadow:0 14px 34px rgba(0,0,0,.25)
 }
+
 .hero-art svg{
   display:block;
   width:100%;
@@ -156,23 +200,28 @@ h1{
 }
 
 /* SECTIONS */
+
 .section{
   padding:68px 0;
   border-bottom:1px solid #c4cdd4
 }
+
 .section.alt{
   background:rgba(224,231,236,.72)
 }
+
 .section.dark{
   background:var(--navy);
   color:#fff
 }
+
 .section-head{
   display:flex;
   gap:14px;
   align-items:flex-start;
   margin-bottom:22px
 }
+
 .kicker{
   margin:0 0 4px;
   color:var(--red);
@@ -181,9 +230,11 @@ h1{
   font-weight:900;
   text-transform:uppercase
 }
+
 .section.dark .kicker{
   color:#f0d879
 }
+
 .section h2{
   font-family:Georgia,"Times New Roman",serif;
   font-size:clamp(29px,4vw,46px);
@@ -191,52 +242,58 @@ h1{
   color:var(--navy);
   margin:0
 }
+
 .section.dark h2{
   color:#fff
 }
+
 .section-lead{
   max-width:900px;
   color:#565c63;
   font-size:16px
 }
+
 .section.dark .section-lead{
   color:#d5dbe5
 }
 
 /* COMMON */
+
 .grid2{
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
   gap:20px
 }
+
 .grid3{
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
   gap:16px
 }
+
 .paper{
   background:rgba(255,255,255,.94);
   border:1px solid var(--line);
   box-shadow:var(--shadow);
   padding:24px
 }
+
 .paper h3{
   margin:0 0 8px;
   color:var(--navy);
   font-size:20px
 }
+
 .paper p{
   margin:0 0 10px
 }
-.paper ul{
-  margin:9px 0 0;
-  padding-left:20px
-}
+
 .chips{
   display:flex;
   flex-wrap:wrap;
   gap:8px
 }
+
 .chip{
   padding:7px 10px;
   border:1px solid #d0c8bb;
@@ -244,6 +301,7 @@ h1{
   font-size:11px;
   font-weight:900
 }
+
 .info-band{
   padding:17px 20px;
   background:#fff;
@@ -254,9 +312,11 @@ h1{
   gap:8px;
   align-items:center
 }
+
 .info-band strong{
   color:var(--red)
 }
+
 .quote{
   border-left:5px solid var(--red);
   background:#fff3f3;
@@ -266,6 +326,7 @@ h1{
 }
 
 /* STANDARD FLOW */
+
 .flow{
   display:flex;
   align-items:stretch;
@@ -273,6 +334,7 @@ h1{
   overflow:auto;
   padding:6px 0 12px
 }
+
 .flow-step{
   min-width:165px;
   flex:1;
@@ -280,21 +342,25 @@ h1{
   border:1px solid var(--line);
   padding:15px
 }
+
 .flow-step b{
   display:block;
   font-size:10px;
   color:#777
 }
+
 .flow-step h3{
   font-size:14px;
   margin:6px 0 4px;
   color:var(--navy)
 }
+
 .flow-step p{
   font-size:11px;
   color:#656565;
   margin:0
 }
+
 .flow-arrow{
   display:grid;
   place-items:center;
@@ -304,47 +370,55 @@ h1{
 }
 
 /* ENGINEERING */
+
 .engineering-icons{
   display:grid;
   grid-template-columns:repeat(6,1fr);
   gap:12px;
   margin-top:20px
 }
+
 .eng-card{
   background:#fff;
   border:1px solid var(--line);
   text-align:center;
   padding:14px 10px
 }
+
 .eng-card svg{
   width:58px;
   height:58px;
   display:block;
   margin:0 auto 7px
 }
+
 .eng-card b{
   display:block;
   font-size:12px;
   color:var(--navy)
 }
+
 .eng-card small{
   font-size:10px;
   color:#666
 }
 
 /* ROBOT */
+
 .robot-layout{
   display:grid;
   grid-template-columns:.9fr 1.1fr;
   gap:22px;
   align-items:center
 }
+
 .robot-layout svg{
   width:100%;
   display:block;
   background:#fff;
   border:1px solid var(--line)
 }
+
 .warning{
   padding:13px 15px;
   border:1px solid #dfc36b;
@@ -354,6 +428,7 @@ h1{
 }
 
 /* SAFETY */
+
 .safety-shell{
   background:var(--navy);
   color:#fff;
@@ -361,16 +436,19 @@ h1{
   border:1px solid #0c1728;
   box-shadow:0 10px 24px rgba(23,36,58,.18)
 }
+
 .safety-shell h3{
   font-family:Georgia,serif;
   font-size:27px;
   margin:0 0 15px
 }
+
 .safety-flow{
   display:grid;
   grid-template-columns:repeat(7,1fr);
   gap:7px
 }
+
 .safety-step{
   position:relative;
   background:#253657;
@@ -378,6 +456,7 @@ h1{
   padding:15px 10px;
   text-align:center
 }
+
 .safety-step:not(:last-child):after{
   content:"→";
   position:absolute;
@@ -389,6 +468,7 @@ h1{
   font-size:20px;
   font-weight:900
 }
+
 .safety-step.red{border-top-color:#e05c5c}
 .safety-step.blue{border-top-color:#6ca6d3}
 .safety-step.green{border-top-color:#82b56f}
@@ -396,53 +476,63 @@ h1{
 .safety-step.orange{border-top-color:#e5a255}
 .safety-step.teal{border-top-color:#63c5b5}
 .safety-step.gold{border-top-color:#f0d879}
+
 .safety-step .n{
   font-size:9px;
   color:#bac5d3;
   font-weight:900
 }
+
 .safety-step b{
   display:block;
   font-size:11px;
   margin:4px 0 6px
 }
+
 .safety-step small{
   font-size:9.5px;
   color:#d7dee8
 }
+
 .device-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:12px;
   margin-top:18px
 }
+
 .device{
   background:#fff;
   color:var(--ink);
   padding:14px;
   border-top:4px solid var(--blue)
 }
+
 .device b{
   display:block;
   font-size:12px
 }
+
 .device small{
   font-size:10.5px;
   color:#666
 }
 
 /* ECE */
+
 .ece-box{
   padding:24px;
   background:#fff;
   border:1px solid var(--line)
 }
+
 .ece-flow{
   display:flex;
   align-items:stretch;
   gap:7px;
   overflow:auto
 }
+
 .ece-step{
   min-width:160px;
   flex:1;
@@ -451,47 +541,56 @@ h1{
   border:1px solid var(--line);
   background:#fafafa
 }
+
 .ece-step svg{
   width:54px;
   height:54px;
   display:block;
   margin:0 auto 6px
 }
+
 .ece-step b{
   display:block;
   font-size:12px;
   color:var(--navy)
 }
+
 .ece-step small{
   font-size:10px;
   color:#666
 }
+
 .ece-arrow{
   display:grid;
   place-items:center;
   color:#666;
   min-width:20px
 }
+
 .ece-mini{
   display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:10px;
   margin-top:16px
 }
+
 .ece-mini>div{
   background:#edf4fb;
   border:1px solid #c7dbe9;
   padding:12px
 }
+
 .ece-mini b{
   display:block;
   color:var(--blue);
   font-size:12px
 }
+
 .ece-mini small{
   font-size:10px;
   color:#555
 }
+
 .ece-quote{
   text-align:center;
   color:var(--red);
@@ -500,34 +599,40 @@ h1{
 }
 
 /* BIS ROLE */
+
 .bis-role{
   display:grid;
   grid-template-columns:1fr .95fr;
   gap:20px;
   align-items:center
 }
+
 .standard-card{
   background:#fff;
   border:2px solid var(--navy);
   padding:25px;
   text-align:center
 }
+
 .standard-card .big{
   font-size:24px;
   font-weight:900;
   color:var(--red)
 }
+
 .standard-card .sub{
   font-size:11px;
   color:#666;
   margin-top:6px
 }
+
 .role-flow{
   display:flex;
   flex-direction:column;
   gap:6px;
   align-items:center
 }
+
 .role-flow span,
 .role-flow strong{
   display:block;
@@ -539,6 +644,7 @@ h1{
   font-size:12px;
   font-weight:900
 }
+
 .role-flow strong{
   background:#eef6ea;
   border-color:#a9c69f;
@@ -546,64 +652,101 @@ h1{
 }
 
 /* EXTRA */
+
 .extra-grid{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:16px
 }
+
 .extra-card{
   background:#fff;
   border:1px solid var(--line);
   padding:20px
 }
+
 .extra-card h3{
   margin:0 0 7px;
   font-size:18px;
   color:var(--navy)
 }
+
 .extra-card p{
   margin:0;
   color:#4f5358;
   font-size:13px
 }
 
-/* POSTER */
-.poster-view{
+/* POSTER PDF SECTION */
+
+.pdf-section{
+  background:
+    linear-gradient(rgba(45,103,149,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(45,103,149,.04) 1px,transparent 1px),
+    #e5eaee;
+  background-size:24px 24px;
+}
+
+.pdf-panel{
   background:#fff;
   border:1px solid var(--line);
-  padding:18px;
-  box-shadow:var(--shadow)
+  box-shadow:var(--shadow);
+  padding:30px;
+  text-align:center
 }
-.poster-view img{
-  width:100%;
-  display:block;
-  border:1px solid #b8bec4
+
+.pdf-icon{
+  width:88px;
+  height:108px;
+  margin:0 auto 18px;
+  background:var(--red);
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-size:25px;
+  font-weight:900;
+  position:relative
 }
-.poster-note{
-  font-size:11px;
-  color:#666;
-  margin:9px 0 0
+
+.pdf-icon:after{
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  border-top:22px solid #fff;
+  border-left:22px solid transparent
 }
-.poster-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:9px;
-  margin-top:12px
+
+.pdf-panel h3{
+  margin:0;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:27px;
+  color:var(--navy)
 }
-.poster-actions a{
+
+.pdf-panel p{
+  color:#626870;
+  font-size:13px;
+  margin:8px 0 20px
+}
+
+.pdf-button{
   display:inline-block;
-  padding:10px 13px;
+  padding:13px 22px;
   background:var(--navy);
   color:#fff;
   text-decoration:none;
   font-size:12px;
-  font-weight:900
+  font-weight:900;
+  letter-spacing:.04em
 }
-.poster-actions a.alt{
+
+.pdf-button:hover{
   background:var(--red)
 }
 
 /* REFERENCES */
+
 .refs a{
   display:block;
   text-decoration:none;
@@ -612,56 +755,47 @@ h1{
   padding:15px;
   margin-bottom:9px
 }
+
 .refs a:hover{
   border-color:#91acc1
 }
+
 .refs b{
   display:block;
   color:var(--blue);
   font-size:13px
 }
+
 .refs span{
   font-size:11px;
   color:#666
 }
-.takeaway{
-  margin-top:20px;
-  padding:22px;
-  background:#fff;
-  border:2px solid var(--navy);
-  text-align:center
-}
-.takeaway h3{
-  font-family:Georgia,serif;
-  font-size:28px;
-  color:var(--navy);
-  margin:0 0 6px
-}
-.takeaway p{
-  margin:0;
-  color:#555
-}
 
 /* FOOTER */
+
 footer{
   background:#111a2b;
   color:#d8dee8;
   padding:30px 0
 }
+
 .footer-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:20px
 }
+
 .footer-grid p{
   font-size:11px;
   margin:4px 0
 }
+
 .footer-title{
   font-weight:900;
   color:#fff;
   font-size:14px
 }
+
 .back{
   position:fixed;
   right:18px;
@@ -679,10 +813,26 @@ footer{
 }
 
 @media(max-width:980px){
-  .hero-grid,.robot-layout,.bis-role,.grid2{grid-template-columns:1fr}
-  .engineering-icons{grid-template-columns:repeat(3,1fr)}
-  .grid3{grid-template-columns:1fr 1fr}
-  .safety-flow{grid-template-columns:1fr}
+
+  .hero-grid,
+  .robot-layout,
+  .bis-role,
+  .grid2{
+    grid-template-columns:1fr
+  }
+
+  .engineering-icons{
+    grid-template-columns:repeat(3,1fr)
+  }
+
+  .grid3{
+    grid-template-columns:1fr 1fr
+  }
+
+  .safety-flow{
+    grid-template-columns:1fr
+  }
+
   .safety-step:not(:last-child):after{
     content:"↓";
     right:50%;
@@ -690,26 +840,60 @@ footer{
     bottom:-18px;
     transform:translateX(50%)
   }
-  .device-grid{grid-template-columns:1fr 1fr}
-  .ece-mini{grid-template-columns:1fr 1fr}
+
+  .device-grid{
+    grid-template-columns:1fr 1fr
+  }
+
+  .ece-mini{
+    grid-template-columns:1fr 1fr
+  }
 }
+
 @media(max-width:620px){
-  .navlinks{display:none}
-  .hero{padding:40px 0 46px}
-  .section{padding:50px 0}
-  .engineering-icons,.grid3,.device-grid,.ece-mini,.extra-grid{grid-template-columns:1fr 1fr}
-  .footer-grid{grid-template-columns:1fr}
-  .section h2{font-size:31px}
-  .hero-sub{font-size:15px}
+
+  .navlinks{
+    display:none
+  }
+
+  .hero{
+    padding:40px 0 46px
+  }
+
+  .section{
+    padding:50px 0
+  }
+
+  .engineering-icons,
+  .grid3,
+  .device-grid,
+  .ece-mini,
+  .extra-grid{
+    grid-template-columns:1fr 1fr
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr
+  }
+
+  .section h2{
+    font-size:31px
+  }
+
+  .hero-sub{
+    font-size:15px
+  }
 }
 </style>
 </head>
 
 <body>
+
 <div class="topbar"></div>
 
 <header>
   <div class="container nav">
+
     <a href="#top" class="brand">
       <span class="brand-bis">BIS</span>
       <span>BIS CLUB • POSTER COMPANION</span>
@@ -727,26 +911,36 @@ footer{
       <a href="#poster">Poster</a>
       <a href="#sources">Sources</a>
     </nav>
+
   </div>
 </header>
+
 
 <main id="top">
 
 <!-- HERO -->
+
 <section class="hero">
+
   <div class="container hero-grid">
 
     <div>
-      <p class="eyebrow">BIS CLUB POSTER PRESENTATION • DIGITAL EXTENSION</p>
+
+      <p class="eyebrow">
+        BIS CLUB POSTER PRESENTATION • DIGITAL EXTENSION
+      </p>
 
       <h1>
         Industrial Robots:
-        <span class="hero-title-line">The Role of Safety Standards</span>
+        <span class="hero-title-line">
+          The Role of Safety Standards
+        </span>
       </h1>
 
       <p class="hero-sub">
-        A detailed companion to the A3 poster — from BIS and standards to engineering,
-        industrial robots, safety systems, ECE control and deeper technical context.
+        A detailed companion to the A3 poster — from BIS and standards
+        to engineering, industrial robots, safety systems, ECE control
+        and deeper technical context.
       </p>
 
       <div class="hero-meta">
@@ -754,15 +948,22 @@ footer{
         <span>Government Engineering College, Rajkot</span>
         <span>Gujarat Technological University</span>
       </div>
+
     </div>
 
+
     <div class="hero-art">
-      <svg viewBox="0 0 620 430" aria-label="Industrial robot safety schematic">
+
+      <svg viewBox="0 0 620 430">
 
         <rect x="8" y="8" width="604" height="414"
-              fill="#fbfaf5" stroke="#17243a" stroke-width="3"/>
+              fill="#fbfaf5"
+              stroke="#17243a"
+              stroke-width="3"/>
 
-        <path d="M58 330H560" stroke="#777" stroke-width="2"/>
+        <path d="M58 330H560"
+              stroke="#777"
+              stroke-width="2"/>
 
         <path d="M92 110H525V330H92Z"
               fill="none"
@@ -777,10 +978,25 @@ footer{
               stroke-linecap="round"
               stroke-linejoin="round"/>
 
-        <circle cx="280" cy="265" r="17" fill="#fff" stroke="#a71919" stroke-width="5"/>
-        <circle cx="205" cy="208" r="16" fill="#fff" stroke="#2d6795" stroke-width="5"/>
-        <circle cx="300" cy="120" r="16" fill="#fff" stroke="#4e7e43" stroke-width="5"/>
-        <circle cx="414" cy="172" r="16" fill="#fff" stroke="#d88826" stroke-width="5"/>
+        <circle cx="280" cy="265" r="17"
+                fill="#fff"
+                stroke="#a71919"
+                stroke-width="5"/>
+
+        <circle cx="205" cy="208" r="16"
+                fill="#fff"
+                stroke="#2d6795"
+                stroke-width="5"/>
+
+        <circle cx="300" cy="120" r="16"
+                fill="#fff"
+                stroke="#4e7e43"
+                stroke-width="5"/>
+
+        <circle cx="414" cy="172" r="16"
+                fill="#fff"
+                stroke="#d88826"
+                stroke-width="5"/>
 
         <path d="M414 172l45-28M414 172l45 28"
               stroke="#263a57"
@@ -794,18 +1010,24 @@ footer{
               stroke-width="34"/>
 
         <rect x="55" y="47" width="132" height="60"
-              fill="#fff6d9" stroke="#cdb052" stroke-width="2"/>
+              fill="#fff6d9"
+              stroke="#cdb052"
+              stroke-width="2"/>
 
         <text x="121" y="72"
               text-anchor="middle"
               font-size="14"
               font-weight="900"
-              fill="#6b5310">HAZARD</text>
+              fill="#6b5310">
+          HAZARD
+        </text>
 
         <text x="121" y="92"
               text-anchor="middle"
               font-size="10"
-              fill="#555">collision • impact</text>
+              fill="#555">
+          collision • impact
+        </text>
 
         <rect x="433" y="47" width="132" height="60"
               fill="#eff6ea"
@@ -816,12 +1038,16 @@ footer{
               text-anchor="middle"
               font-size="14"
               font-weight="900"
-              fill="#426b38">SAFER</text>
+              fill="#426b38">
+          SAFER
+        </text>
 
         <text x="499" y="92"
               text-anchor="middle"
               font-size="10"
-              fill="#555">sense • decide • protect</text>
+              fill="#555">
+          sense • decide • protect
+        </text>
 
         <text x="310" y="390"
               text-anchor="middle"
@@ -830,15 +1056,20 @@ footer{
               fill="#17243a">
           SENSOR → CONTROLLER → SAFETY → TEST → SAFE ROBOT
         </text>
+
       </svg>
+
     </div>
 
   </div>
+
 </section>
 
 
 <!-- COMPETITION -->
+
 <section id="competition" class="section">
+
   <div class="container">
 
     <div class="section-head">
@@ -850,26 +1081,39 @@ footer{
 
     <p class="section-lead">
       The A3 poster is the physical presentation.
-      This website is its deeper digital companion.
+      This website is its detailed digital companion.
     </p>
 
     <div class="grid3" style="margin-top:20px">
 
       <div class="paper">
         <h3>Poster</h3>
-        <p>Prepare a creative computerized or self-made <b>A3-size poster</b>.</p>
-        <p><b>Submission:</b> on or before 24 August 2026.</p>
+        <p>
+          Prepare a creative computerized or self-made
+          <b>A3-size poster</b>.
+        </p>
+        <p>
+          <b>Submission:</b> on or before 24 August 2026.
+        </p>
       </div>
 
       <div class="paper">
         <h3>Presentation</h3>
-        <p><b>Presentation:</b> 31 August 2026.</p>
-        <p>Participant presence is mandatory.</p>
+        <p>
+          <b>Presentation:</b> 31 August 2026.
+        </p>
+        <p>
+          Participant presence is mandatory.
+        </p>
       </div>
 
       <div class="paper">
         <h3>Team & prizes</h3>
-        <p>Maximum <b>3 students</b> per group. No registration fee.</p>
+        <p>
+          Maximum <b>3 students</b> per group.
+          No registration fee.
+        </p>
+
         <p>
           <b>
             1st ₹1500 • 2nd ₹1000 •
@@ -881,24 +1125,41 @@ footer{
     </div>
 
     <div class="info-band">
+
       <strong>Poster themes:</strong>
-      <span class="chip">Standards for a Sustainable World</span>
-      <span class="chip">Standards and Safety Requirements</span>
-      <span class="chip">BIS Standards for Engineering</span>
+
+      <span class="chip">
+        Standards for a Sustainable World
+      </span>
+
+      <span class="chip">
+        Standards and Safety Requirements
+      </span>
+
+      <span class="chip">
+        BIS Standards for Engineering
+      </span>
+
     </div>
 
     <div class="quote" style="margin-top:18px">
-      Our poster uses <b>industrial robots</b> as one engineering example
-      and connects the same standards mindset to sensors, transducers,
-      batteries, machines, electronics and IoT systems.
+
+      Our poster uses <b>industrial robots</b> as one
+      engineering example and connects the same standards
+      mindset to sensors, transducers, batteries, machines,
+      electronics and IoT systems.
+
     </div>
 
   </div>
+
 </section>
 
 
 <!-- BIS -->
+
 <section id="bis" class="section alt">
+
   <div class="container">
 
     <div class="section-head">
@@ -911,6 +1172,7 @@ footer{
     <div class="grid2">
 
       <div class="paper">
+
         <h3>India’s National Standards Body</h3>
 
         <p>
@@ -921,11 +1183,13 @@ footer{
         <p>Major goals:</p>
 
         <div class="chips">
+
           <span class="chip">Safety</span>
           <span class="chip">Quality</span>
           <span class="chip">Reliability</span>
           <span class="chip">Performance</span>
           <span class="chip">Sustainability</span>
+
         </div>
 
         <p style="margin-top:15px">
@@ -933,10 +1197,13 @@ footer{
           <b>standards, testing, certification,
           conformity assessment and consumer protection</b>.
         </p>
+
       </div>
 
+
       <div class="paper">
-        <svg viewBox="0 0 560 285" aria-label="BIS ecosystem diagram">
+
+        <svg viewBox="0 0 560 285">
 
           <rect x="15" y="15"
                 width="530"
@@ -953,48 +1220,89 @@ footer{
                 text-anchor="middle"
                 font-size="25"
                 font-weight="900"
-                fill="#a71919">BIS</text>
+                fill="#a71919">
+            BIS
+          </text>
 
           <text x="280" y="156"
                 text-anchor="middle"
                 font-size="10"
-                fill="#555">INDIA</text>
+                fill="#555">
+            INDIA
+          </text>
 
           <g font-size="11"
              font-weight="900"
              text-anchor="middle">
 
-            <rect x="50" y="48" width="125" height="43"
-                  fill="#eef4fb" stroke="#91b6d2"/>
-            <text x="112" y="74" fill="#2d6795">STANDARDS</text>
+            <rect x="50" y="48"
+                  width="125"
+                  height="43"
+                  fill="#eef4fb"
+                  stroke="#91b6d2"/>
 
-            <rect x="385" y="48" width="125" height="43"
-                  fill="#eff6ea" stroke="#9bb990"/>
-            <text x="447" y="74" fill="#4e7e43">TESTING</text>
+            <text x="112" y="74"
+                  fill="#2d6795">
+              STANDARDS
+            </text>
 
-            <rect x="50" y="198" width="125" height="43"
-                  fill="#fff0f0" stroke="#dfa2a2"/>
-            <text x="112" y="224" fill="#a71919">CERTIFICATION</text>
+            <rect x="385" y="48"
+                  width="125"
+                  height="43"
+                  fill="#eff6ea"
+                  stroke="#9bb990"/>
 
-            <rect x="385" y="198" width="125" height="43"
-                  fill="#f3eef9" stroke="#bea3d2"/>
-            <text x="447" y="224" fill="#70509a">CONFORMITY</text>
+            <text x="447" y="74"
+                  fill="#4e7e43">
+              TESTING
+            </text>
+
+            <rect x="50" y="198"
+                  width="125"
+                  height="43"
+                  fill="#fff0f0"
+                  stroke="#dfa2a2"/>
+
+            <text x="112" y="224"
+                  fill="#a71919">
+              CERTIFICATION
+            </text>
+
+            <rect x="385" y="198"
+                  width="125"
+                  height="43"
+                  fill="#f3eef9"
+                  stroke="#bea3d2"/>
+
+            <text x="447" y="224"
+                  fill="#70509a">
+              CONFORMITY
+            </text>
 
           </g>
 
-          <path d="M175 70L235 108M385 70L325 108M175 219L235 178M385 219L325 178"
+          <path d="M175 70L235 108
+                   M385 70L325 108
+                   M175 219L235 178
+                   M385 219L325 178"
                 stroke="#777"
                 stroke-width="2"/>
+
         </svg>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 
 <!-- STANDARD -->
+
 <section id="standards" class="section">
+
   <div class="container">
 
     <div class="section-head">
@@ -1005,8 +1313,9 @@ footer{
     </div>
 
     <p class="section-lead">
-      A standard is a set of technical requirements and guidelines that helps
-      a product or system become <b>safe, reliable, consistent and fit for use</b>.
+      A standard is a set of technical requirements and guidelines
+      that helps a product or system become
+      <b>safe, reliable, consistent and fit for use</b>.
     </p>
 
     <div class="flow" style="margin-top:22px">
@@ -1057,11 +1366,14 @@ footer{
     </div>
 
   </div>
+
 </section>
 
 
 <!-- ENGINEERING -->
+
 <section id="engineering" class="section alt">
+
   <div class="container">
 
     <div class="section-head">
@@ -1082,64 +1394,122 @@ footer{
 
       <div class="eng-card">
         <svg viewBox="0 0 64 64">
-          <circle cx="32" cy="32" r="21" fill="#eaf4fb" stroke="#2d6795" stroke-width="3"/>
-          <path d="M22 32h20M32 22v20" stroke="#2d6795" stroke-width="3"/>
+          <circle cx="32" cy="32" r="21"
+                  fill="#eaf4fb"
+                  stroke="#2d6795"
+                  stroke-width="3"/>
+          <path d="M22 32h20M32 22v20"
+                stroke="#2d6795"
+                stroke-width="3"/>
         </svg>
+
         <b>Sensors</b>
         <small>Detection</small>
       </div>
 
+
       <div class="eng-card">
+
         <svg viewBox="0 0 64 64">
-          <rect x="14" y="17" width="36" height="30" rx="5"
-                fill="#eff6ea" stroke="#4e7e43" stroke-width="3"/>
-          <path d="M18 12v8M28 12v8M38 12v8M48 12v8M18 44v8M28 44v8M38 44v8M48 44v8"
-                stroke="#4e7e43" stroke-width="2"/>
+          <rect x="14" y="17"
+                width="36"
+                height="30"
+                rx="5"
+                fill="#eff6ea"
+                stroke="#4e7e43"
+                stroke-width="3"/>
+
+          <path d="M18 12v8M28 12v8M38 12v8M48 12v8
+                   M18 44v8M28 44v8M38 44v8M48 44v8"
+                stroke="#4e7e43"
+                stroke-width="2"/>
         </svg>
+
         <b>Transducers</b>
         <small>Measurement</small>
       </div>
 
+
       <div class="eng-card">
+
         <svg viewBox="0 0 64 64">
-          <rect x="13" y="15" width="38" height="34" rx="4"
-                fill="#fff5d9" stroke="#d88826" stroke-width="3"/>
+          <rect x="13" y="15"
+                width="38"
+                height="34"
+                rx="4"
+                fill="#fff5d9"
+                stroke="#d88826"
+                stroke-width="3"/>
+
           <path d="M20 23h24M20 32h24M20 41h15"
-                stroke="#d88826" stroke-width="3"/>
+                stroke="#d88826"
+                stroke-width="3"/>
         </svg>
+
         <b>Batteries</b>
         <small>Safety & performance</small>
       </div>
 
+
       <div class="eng-card">
+
         <svg viewBox="0 0 64 64">
           <circle cx="32" cy="32" r="16"
-                  fill="#f3eef9" stroke="#70509a" stroke-width="3"/>
-          <path d="M32 9v9M32 46v9M9 32h9M46 32h9M16 16l7 7M41 41l7 7M48 16l-7 7M23 41l-7 7"
-                stroke="#70509a" stroke-width="3"/>
+                  fill="#f3eef9"
+                  stroke="#70509a"
+                  stroke-width="3"/>
+
+          <path d="M32 9v9M32 46v9M9 32h9M46 32h9
+                   M16 16l7 7M41 41l7 7M48 16l-7 7M23 41l-7 7"
+                stroke="#70509a"
+                stroke-width="3"/>
         </svg>
+
         <b>Machines</b>
         <small>System safety</small>
       </div>
 
+
       <div class="eng-card">
+
         <svg viewBox="0 0 64 64">
-          <rect x="14" y="17" width="36" height="31" rx="3"
-                fill="#fff0f0" stroke="#a71919" stroke-width="3"/>
+          <rect x="14" y="17"
+                width="36"
+                height="31"
+                rx="3"
+                fill="#fff0f0"
+                stroke="#a71919"
+                stroke-width="3"/>
+
           <path d="M20 25h24M20 33h24M20 41h17"
-                stroke="#a71919" stroke-width="3"/>
+                stroke="#a71919"
+                stroke-width="3"/>
         </svg>
+
         <b>Electronics</b>
         <small>Reliability</small>
       </div>
 
+
       <div class="eng-card">
+
         <svg viewBox="0 0 64 64">
+
           <circle cx="32" cy="32" r="8"
-                  fill="#eaf4fb" stroke="#2d6795" stroke-width="3"/>
-          <path d="M18 24a18 18 0 0 0 0 16M46 24a18 18 0 0 1 0 16M11 18a27 27 0 0 0 0 28M53 18a27 27 0 0 1 0 28"
-                fill="none" stroke="#2d6795" stroke-width="3"/>
+                  fill="#eaf4fb"
+                  stroke="#2d6795"
+                  stroke-width="3"/>
+
+          <path d="M18 24a18 18 0 0 0 0 16
+                   M46 24a18 18 0 0 1 0 16
+                   M11 18a27 27 0 0 0 0 28
+                   M53 18a27 27 0 0 1 0 28"
+                fill="none"
+                stroke="#2d6795"
+                stroke-width="3"/>
+
         </svg>
+
         <b>IoT Systems</b>
         <small>Connectivity</small>
       </div>
@@ -1152,11 +1522,14 @@ footer{
     </div>
 
   </div>
+
 </section>
 
 
-<!-- INDUSTRIAL ROBOT -->
+<!-- INDUSTRIAL ROBOTS -->
+
 <section id="robot" class="section">
+
   <div class="container">
 
     <div class="section-head">
@@ -1169,7 +1542,10 @@ footer{
     <div class="robot-layout">
 
       <div class="paper">
-        <h3>Powerful automation needs strong safety.</h3>
+
+        <h3>
+          Powerful automation needs strong safety.
+        </h3>
 
         <p>
           An industrial robot is a programmable machine used
@@ -1188,22 +1564,37 @@ footer{
         </div>
 
         <p style="margin-top:16px">
+
           <b>Robots provide:</b>
-          High Speed • High Precision • Repeatability • Continuous Operation
+
+          High Speed • High Precision •
+          Repeatability • Continuous Operation
+
         </p>
 
         <div class="warning">
-          Automatic movement, high force and unexpected motion can create hazards
-          such as collision, crushing, impact and other mechanical/electrical risks.
+
+          Automatic movement, high force and unexpected motion
+          can create hazards such as collision, crushing, impact
+          and other mechanical/electrical risks.
+
         </div>
+
       </div>
 
-      <svg viewBox="0 0 700 450" aria-label="Industrial robot illustration">
 
-        <rect x="8" y="8" width="684" height="434"
-              fill="#fff" stroke="#17243a" stroke-width="3"/>
+      <svg viewBox="0 0 700 450">
 
-        <path d="M55 350H646" stroke="#888" stroke-width="2"/>
+        <rect x="8" y="8"
+              width="684"
+              height="434"
+              fill="#fff"
+              stroke="#17243a"
+              stroke-width="3"/>
+
+        <path d="M55 350H646"
+              stroke="#888"
+              stroke-width="2"/>
 
         <path d="M300 350V285L222 222L315 132L447 186"
               fill="none"
@@ -1212,10 +1603,25 @@ footer{
               stroke-linecap="round"
               stroke-linejoin="round"/>
 
-        <circle cx="300" cy="285" r="20" fill="#fff" stroke="#a71919" stroke-width="5"/>
-        <circle cx="222" cy="222" r="18" fill="#fff" stroke="#2d6795" stroke-width="5"/>
-        <circle cx="315" cy="132" r="18" fill="#fff" stroke="#4e7e43" stroke-width="5"/>
-        <circle cx="447" cy="186" r="18" fill="#fff" stroke="#d88826" stroke-width="5"/>
+        <circle cx="300" cy="285" r="20"
+                fill="#fff"
+                stroke="#a71919"
+                stroke-width="5"/>
+
+        <circle cx="222" cy="222" r="18"
+                fill="#fff"
+                stroke="#2d6795"
+                stroke-width="5"/>
+
+        <circle cx="315" cy="132" r="18"
+                fill="#fff"
+                stroke="#4e7e43"
+                stroke-width="5"/>
+
+        <circle cx="447" cy="186" r="18"
+                fill="#fff"
+                stroke="#d88826"
+                stroke-width="5"/>
 
         <path d="M447 186l51-31M447 186l51 31"
               stroke="#263a57"
@@ -1228,7 +1634,9 @@ footer{
               stroke-opacity=".12"
               stroke-width="34"/>
 
-        <rect x="58" y="55" width="142" height="62"
+        <rect x="58" y="55"
+              width="142"
+              height="62"
               fill="#fff4d7"
               stroke="#cfb256"/>
 
@@ -1236,14 +1644,20 @@ footer{
               text-anchor="middle"
               font-size="14"
               font-weight="900"
-              fill="#6b5310">HAZARDS</text>
+              fill="#6b5310">
+          HAZARDS
+        </text>
 
         <text x="129" y="101"
               text-anchor="middle"
               font-size="10"
-              fill="#555">collision • crushing</text>
+              fill="#555">
+          collision • crushing
+        </text>
 
-        <rect x="505" y="55" width="142" height="62"
+        <rect x="505" y="55"
+              width="142"
+              height="62"
               fill="#eef6ea"
               stroke="#8fb084"/>
 
@@ -1251,12 +1665,16 @@ footer{
               text-anchor="middle"
               font-size="14"
               font-weight="900"
-              fill="#426b38">AUTOMATION</text>
+              fill="#426b38">
+          AUTOMATION
+        </text>
 
         <text x="576" y="101"
               text-anchor="middle"
               font-size="10"
-              fill="#555">speed • precision</text>
+              fill="#555">
+          speed • precision
+        </text>
 
         <text x="350" y="404"
               text-anchor="middle"
@@ -1265,15 +1683,20 @@ footer{
               fill="#17243a">
           INDUSTRIAL ROBOT • MANUFACTURING TASKS
         </text>
+
       </svg>
 
     </div>
+
   </div>
+
 </section>
 
 
 <!-- SAFETY -->
+
 <section id="safety" class="section dark">
+
   <div class="container">
 
     <div class="section-head">
@@ -1339,6 +1762,7 @@ footer{
 
       </div>
 
+
       <div class="device-grid">
 
         <div class="device">
@@ -1374,12 +1798,16 @@ footer{
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 
 <!-- ECE -->
+
 <section id="ece" class="section alt">
+
   <div class="container">
 
     <div class="section-head">
@@ -1400,66 +1828,124 @@ footer{
       <div class="ece-flow">
 
         <div class="ece-step">
+
           <svg viewBox="0 0 64 64">
-            <circle cx="32" cy="32" r="21" fill="#eaf4fb" stroke="#2d6795" stroke-width="3"/>
-            <path d="M22 32h20M32 22v20" stroke="#2d6795" stroke-width="3"/>
+
+            <circle cx="32" cy="32" r="21"
+                    fill="#eaf4fb"
+                    stroke="#2d6795"
+                    stroke-width="3"/>
+
+            <path d="M22 32h20M32 22v20"
+                  stroke="#2d6795"
+                  stroke-width="3"/>
+
           </svg>
+
           <b>SENSOR</b>
           <small>Detects</small>
+
         </div>
 
         <div class="ece-arrow">→</div>
 
         <div class="ece-step">
+
           <svg viewBox="0 0 64 64">
-            <rect x="14" y="14" width="36" height="36" rx="6"
-                  fill="#eff6ea" stroke="#4e7e43" stroke-width="3"/>
-            <path d="M23 32h18" stroke="#4e7e43" stroke-width="3"/>
+
+            <rect x="14" y="14"
+                  width="36"
+                  height="36"
+                  rx="6"
+                  fill="#eff6ea"
+                  stroke="#4e7e43"
+                  stroke-width="3"/>
+
+            <path d="M23 32h18"
+                  stroke="#4e7e43"
+                  stroke-width="3"/>
+
           </svg>
+
           <b>CONTROLLER</b>
           <small>Decides</small>
+
         </div>
 
         <div class="ece-arrow">→</div>
 
         <div class="ece-step">
+
           <svg viewBox="0 0 64 64">
-            <rect x="15" y="22" width="34" height="20"
-                  fill="#fff5d9" stroke="#d88826" stroke-width="3"/>
-            <path d="M49 28h7v8h-7" stroke="#d88826" stroke-width="3"/>
+
+            <rect x="15" y="22"
+                  width="34"
+                  height="20"
+                  fill="#fff5d9"
+                  stroke="#d88826"
+                  stroke-width="3"/>
+
+            <path d="M49 28h7v8h-7"
+                  stroke="#d88826"
+                  stroke-width="3"/>
+
           </svg>
+
           <b>DRIVE</b>
           <small>Controls power</small>
+
         </div>
 
         <div class="ece-arrow">→</div>
 
         <div class="ece-step">
+
           <svg viewBox="0 0 64 64">
+
             <circle cx="32" cy="32" r="18"
-                    fill="#f3eef9" stroke="#70509a" stroke-width="3"/>
-            <path d="M32 14v36M14 32h36" stroke="#70509a" stroke-width="3"/>
+                    fill="#f3eef9"
+                    stroke="#70509a"
+                    stroke-width="3"/>
+
+            <path d="M32 14v36M14 32h36"
+                  stroke="#70509a"
+                  stroke-width="3"/>
+
           </svg>
+
           <b>MOTOR</b>
           <small>Produces motion</small>
+
         </div>
 
         <div class="ece-arrow">→</div>
 
         <div class="ece-step">
+
           <svg viewBox="0 0 64 64">
-            <path d="M32 50V38M32 38L18 27M32 38L46 27M18 27l7-11M46 27l-7-11"
+
+            <path d="M32 50V38
+                     M32 38L18 27
+                     M32 38L46 27
+                     M18 27l7-11
+                     M46 27l-7-11"
                   fill="none"
                   stroke="#a71919"
                   stroke-width="5"
                   stroke-linecap="round"/>
-            <circle cx="32" cy="50" r="5" fill="#a71919"/>
+
+            <circle cx="32" cy="50" r="5"
+                    fill="#a71919"/>
+
           </svg>
+
           <b>ROBOT</b>
           <small>Performs task</small>
+
         </div>
 
       </div>
+
 
       <div class="ece-mini">
 
@@ -1490,12 +1976,16 @@ footer{
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 
-<!-- BIS + ROBOTS -->
+<!-- BIS ROLE -->
+
 <section id="bis-role" class="section">
+
   <div class="container">
 
     <div class="section-head">
@@ -1508,21 +1998,31 @@ footer{
     <div class="bis-role">
 
       <div class="standard-card">
-        <div class="big">IS/ISO 10218 (Part 1): 2024</div>
+
+        <div class="big">
+          IS/ISO 10218 (Part 1): 2024
+        </div>
 
         <div class="sub">
-          Robotics — Safety Requirements — Part 1: Industrial Robots
+          Robotics — Safety Requirements —
+          Part 1: Industrial Robots
         </div>
 
         <p style="margin:14px 0 0;font-size:13px;color:#555">
-          BIS material for this standard covers industrial-robot safety topics
-          including functional safety, robot classification for functional safety,
-          force-test methodology, collaborative applications and cybersecurity
+
+          BIS material for this standard covers industrial-robot
+          safety topics including functional safety, robot
+          classification for functional safety, force-test
+          methodology, collaborative applications and cybersecurity
           to the extent it applies to robot safety.
+
         </p>
+
       </div>
 
+
       <div class="role-flow">
+
         <span>BIS STANDARD</span>
         <span>↓</span>
         <span>SAFETY REQUIREMENTS</span>
@@ -1532,22 +2032,29 @@ footer{
         <span>TESTING & VERIFICATION</span>
         <span>↓</span>
         <strong>SAFER ROBOT SYSTEM</strong>
+
       </div>
 
     </div>
 
+
     <div class="quote" style="margin-top:20px">
+
       Industrial robots are one example.
-      The same standards mindset extends to sensors, transducers,
-      batteries, machines, electronics and IoT systems.
+      The same standards mindset extends to sensors,
+      transducers, batteries, machines, electronics and IoT systems.
+
     </div>
 
   </div>
+
 </section>
 
 
 <!-- BEYOND POSTER -->
+
 <section id="deep" class="section alt">
+
   <div class="container">
 
     <div class="section-head">
@@ -1557,27 +2064,29 @@ footer{
       </div>
     </div>
 
+
     <div class="extra-grid">
 
-      <div class="extra-card">
+      <div class="paper">
         <h3>Safety is a system problem</h3>
         <p>
           A safe robot is not created by one sensor or one emergency button.
-          The robot, tooling, application, environment, control system and
-          protective measures must be considered together.
+          The robot, tooling, application, environment, control system
+          and protective measures must be considered together.
         </p>
       </div>
 
-      <div class="extra-card">
+
+      <div class="paper">
         <h3>Risk assessment comes first</h3>
         <p>
           The required safeguard depends on the hazard and the way the robot
-          is used. A welding cell, palletizing cell and collaborative application
-          may need different protective measures.
+          is used. Different applications may need different protective measures.
         </p>
       </div>
 
-      <div class="extra-card">
+
+      <div class="paper">
         <h3>Functional safety</h3>
         <p>
           Some safety functions depend on electrical, electronic or programmable
@@ -1586,94 +2095,99 @@ footer{
         </p>
       </div>
 
-      <div class="extra-card">
+
+      <div class="paper">
         <h3>Robot vs robot cell</h3>
         <p>
           A robot is one machine; a robot cell is an integrated application
-          containing the robot, tooling, controls, material and surrounding equipment.
+          containing the robot, tooling, controls, material and surrounding
+          equipment.
         </p>
       </div>
 
-      <div class="extra-card">
+
+      <div class="paper">
         <h3>Cybersecurity can matter</h3>
         <p>
           When networked or programmable systems affect safety functions,
-          cybersecurity can become relevant to robot safety. Exact requirements
-          depend on the system and applicable standard.
+          cybersecurity can become relevant to robot safety.
         </p>
       </div>
 
-      <div class="extra-card">
+
+      <div class="paper">
         <h3>Testing is evidence</h3>
         <p>
-          Designing a safety function is not the end. Testing and verification
-          provide evidence that the intended safety behaviour is achieved under
-          applicable conditions.
+          Designing a safety function is not the end.
+          Testing and verification provide evidence that the intended
+          safety behaviour is achieved.
         </p>
       </div>
 
     </div>
 
-    <div class="takeaway">
-      <h3>Better Standards → Safer Engineering → Better Society</h3>
-      <p>
-        The same engineering thinking shown through the robot example
-        can be applied across many standards-driven technologies.
-      </p>
+
+    <div class="quote" style="margin-top:20px">
+
+      <b>Better Standards → Safer Engineering → Better Society</b>
+
     </div>
 
   </div>
+
 </section>
 
 
-<!-- ORIGINAL POSTER -->
-<section id="poster" class="section">
+<!-- PDF ONLY -->
+
+<section id="poster" class="section pdf-section">
+
   <div class="container">
 
     <div class="section-head">
       <div>
         <p class="kicker">09 • POSTER REFERENCE</p>
-        <h2>The original A3 poster</h2>
+        <h2>Original A3 Poster</h2>
       </div>
     </div>
 
     <p class="section-lead">
-      This is the original poster supplied for the project.
-      The website follows its visual story and expands the content
-      that had to stay compact on A3.
+      Open the original poster PDF used for this project.
     </p>
 
-    <div class="poster-view">
 
-      <img src="BIS_CLUB_poster.png"
-           alt="Original BIS Club A3 poster — Industrial Robots: The Role of Safety Standards">
+    <div class="pdf-panel">
 
-      <p class="poster-note">
-        Keep <b>BIS_CLUB_poster.png</b> and
-        <b>BIS_CLUB_poster.pdf</b> in the same GitHub repository
-        as this index file.
+      <div class="pdf-icon">
+        PDF
+      </div>
+
+      <h3>
+        Industrial Robots: The Role of Safety Standards
+      </h3>
+
+      <p>
+        View the complete original A3 poster.
       </p>
 
-      <div class="poster-actions">
-        <a href="BIS_CLUB_poster.pdf" target="_blank">
-          OPEN ORIGINAL PDF
-        </a>
-
-        <a href="BIS_CLUB_poster.png"
-           target="_blank"
-           class="alt">
-          OPEN FULL-RES POSTER
-        </a>
-      </div>
+      <a
+        href="BIS_CLUB_poster.pdf"
+        target="_blank"
+        class="pdf-button">
+        OPEN POSTER PDF
+      </a>
 
     </div>
 
   </div>
+
 </section>
 
 
 <!-- REFERENCES -->
+
 <section id="sources" class="section alt">
+
   <div class="container">
 
     <div class="section-head">
@@ -1683,55 +2197,103 @@ footer{
       </div>
     </div>
 
+
     <div class="refs">
 
-      <a href="https://www.bis.gov.in/the-bureau/about-bis/?lang=en"
-         target="_blank" rel="noopener">
+      <a
+        href="https://www.bis.gov.in/the-bureau/about-bis/?lang=en"
+        target="_blank"
+        rel="noopener">
+
         <b>About BIS</b>
-        <span>Official BIS page describing BIS and its major activities.</span>
+
+        <span>
+          Official BIS page describing BIS and its major activities.
+        </span>
+
       </a>
 
-      <a href="https://www.bis.gov.in/wp-content/uploads/2020/07/BIS_ACT_2016.pdf"
-         target="_blank" rel="noopener">
+
+      <a
+        href="https://www.bis.gov.in/wp-content/uploads/2020/07/BIS_ACT_2016.pdf"
+        target="_blank"
+        rel="noopener">
+
         <b>BIS Act, 2016</b>
-        <span>Legal basis for BIS and its standards/conformity-assessment role.</span>
+
+        <span>
+          Legal basis for BIS and its standards/conformity-assessment role.
+        </span>
+
       </a>
 
-      <a href="https://www.services.bis.gov.in/tmp/WCPGD15524666_17012024_1.pdf"
-         target="_blank" rel="noopener">
-        <b>BIS material — IS/ISO 10218 (Part 1): 2024</b>
-        <span>Industrial robot safety material used for the deeper section.</span>
+
+      <a
+        href="https://www.services.bis.gov.in/tmp/WCPGD15524666_17012024_1.pdf"
+        target="_blank"
+        rel="noopener">
+
+        <b>
+          BIS material — IS/ISO 10218 (Part 1): 2024
+        </b>
+
+        <span>
+          Industrial robot safety material used for the deeper section.
+        </span>
+
       </a>
 
-      <a href="https://www.bis.gov.in/wp-content/uploads/2022/08/20220524_KYSP_Writeup-2-compressed.pdf"
-         target="_blank" rel="noopener">
+
+      <a
+        href="https://www.bis.gov.in/wp-content/uploads/2022/08/20220524_KYSP_Writeup-2-compressed.pdf"
+        target="_blank"
+        rel="noopener">
+
         <b>Know Your Standard</b>
-        <span>Official BIS guide for finding Indian Standards and related information.</span>
+
+        <span>
+          Official BIS guide for finding Indian Standards and related information.
+        </span>
+
       </a>
 
-      <a href="https://www.bis.gov.in/the-bureau/bis-act-rules-and-regulations/?lang=en"
-         target="_blank" rel="noopener">
+
+      <a
+        href="https://www.bis.gov.in/the-bureau/bis-act-rules-and-regulations/?lang=en"
+        target="_blank"
+        rel="noopener">
+
         <b>BIS Act, Rules & Regulations</b>
-        <span>Official BIS page for the legal and regulatory framework.</span>
+
+        <span>
+          Official BIS page for the legal and regulatory framework.
+        </span>
+
       </a>
 
     </div>
 
+
     <p style="margin-top:16px;font-size:11px;color:#666">
+
       Use the current official BIS publication when making a compliance claim.
       Standards and regulatory requirements can be revised.
+
     </p>
 
   </div>
+
 </section>
 
 </main>
 
 
 <footer>
+
   <div class="container footer-grid">
 
     <div>
+
       <div class="footer-title">
         Industrial Robots: The Role of Safety Standards
       </div>
@@ -1749,22 +2311,36 @@ footer{
       <p>
         B.E. Electronics & Communication Engineering • Semester 5
       </p>
+
     </div>
 
+
     <div>
+
       <div class="footer-title">
         Government Engineering College, Rajkot
       </div>
 
-      <p>Electronics and Communication Department</p>
-      <p>Gujarat Technological University</p>
-      <p>Educational project • 2026</p>
+      <p>
+        Electronics and Communication Department
+      </p>
+
+      <p>
+        Gujarat Technological University
+      </p>
+
+      <p>
+        Educational project • 2026
+      </p>
+
     </div>
 
   </div>
+
 </footer>
 
-<a class="back" href="#top" aria-label="Back to top">↑</a>
+
+<a class="back" href="#top">↑</a>
 
 </body>
 </html>
